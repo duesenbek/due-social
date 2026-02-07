@@ -13,6 +13,7 @@ app.use(cors());
 app.use(express.static("public"));
 
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/posts", require("./routes/postRoutes"));
 
 const PORT = process.env.PORT || 3000;
