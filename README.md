@@ -88,30 +88,26 @@ Shows the active deployment of the Due Social backend on Render, indicating a he
 Overview of the MongoDB Atlas cluster "Cluster0" hosted on AWS, showing the region and tier.
 ![MongoDB Clusters](screenshots/mongodb_clusters_overview.png)
 
-**Cluster Metrics**
-Real-time metrics of the MongoDB cluster, including connections, operations, and network activity.
-![MongoDB Metrics](screenshots/mongodb_cluster_metrics.png)
-
 **Posts Collection**
 Data Explorer view of the `posts` collection, storing user-generated content including text and author references.
-![Posts Collection](screenshots/mongodb_posts_collection.png)
+![Posts Collection](screenshots/mongodb_posts.png)
 
 **Users Collection**
 Data Explorer view of the `users` collection, showing registered users with hashed passwords.
-![Users Collection](screenshots/mongodb_users_collection.png)
+![Users Collection](screenshots/mongodb_users.png)
 
 ### Application UI
 **Login Page**
 Secure login interface where users can authenticate using their email and password.
-![Login Page](screenshots/app_login_page.png)
+![Login Page](screenshots/login_page.png)
 
 **Register Page**
 Registration form for new users to sign up by providing their name, email, and password.
-![Register Page](screenshots/app_register_page.png)
+![Register Page](screenshots/register_page.png)
 
 **Feed Page**
 The main social feed displaying posts from all users throughout the network.
-![Feed Page](screenshots/app_feed_page.png)
+![Feed Page](screenshots/main_page.png)
 
 ### API Testing (Postman)
 **Register User**
@@ -121,6 +117,10 @@ API request to register a new user, returning the created user object.
 **Login User (Token Response)**
 API request to login, returning a JWT for authenticated session management.
 ![Login Test](screenshots/api_login_test.png)
+
+**Get Profile**
+Authenticated request to fetch the current user's profile information.
+![Profile Test](screenshots/api_profile_test.png)
 
 **Create Post**
 Authenticated request to create a new post.
