@@ -51,6 +51,9 @@
 *   **Login**: `POST /api/auth/login`
     *   Body: `{ "email": "user@example.com", "password": "password" }`
 
+### Users
+*   **Get Profile**: `GET /api/users/profile` (Requires Auth)
+
 ### Posts
 *   **Get All Posts**: `GET /api/posts`
 *   **Create Post**: `POST /api/posts` (Requires Auth)
@@ -60,6 +63,12 @@
 *   **Reply to Post**: `POST /api/posts` (Requires Auth)
     *   Body: `{ "content": "This is a reply", "replyTo": "parent_post_id" }`
 *   **Delete Post**: `DELETE /api/posts/:id` (Requires Auth)
+
+### Validation / Error Handling
+*   **400** – Bad Request
+*   **401** – Unauthorized
+*   **404** – Not Found
+*   **500** – Server Error
 
 ## Features
 
@@ -75,6 +84,8 @@
 ## Deployment
 
 **Render URL**: [https://due-social.onrender.com](https://due-social.onrender.com)
+
+> **Note**: This deployment relies on Environment Variables (`PORT`, `MONGO_URI`, `JWT_SECRET`) which must be configured in the deployment platform settings.
 
 ## Screenshots
 
