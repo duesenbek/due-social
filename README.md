@@ -53,6 +53,8 @@
 
 ### Users
 *   **Get Profile**: `GET /api/users/profile` (Requires Auth)
+*   **Update Profile**: `PUT /api/users/profile` (Requires Auth)
+    *   Body: `{ "name": "New Name", "email": "newemail@example.com" }`
 
 ### Posts
 *   **Get All Posts**: `GET /api/posts`
@@ -65,6 +67,9 @@
 *   **Delete Post**: `DELETE /api/posts/:id` (Requires Auth)
 
 ### Validation / Error Handling
+Validation is implemented manually inside controllers (e.g. required fields, email/password checks).
+
+Errors are handled with proper HTTP status codes:
 *   **400** – Bad Request
 *   **401** – Unauthorized
 *   **404** – Not Found
