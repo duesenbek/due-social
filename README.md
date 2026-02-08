@@ -137,6 +137,11 @@ API request to login, returning a JWT for authenticated session management.
 **Get Profile**
 Authenticated request to fetch the current user's profile information.
 ![Profile Test](screenshots/api_profile_test.png)
+
+**Update Profile**
+Authenticated request to update the user's profile (name/gmail).
+![Update Profile Test](screenshots/put_profile.png)
+
 **Create Post**
 Authenticated request to create a new post.
 ![Create Post Test](screenshots/api_create_post_test.png)
